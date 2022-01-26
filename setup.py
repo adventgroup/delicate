@@ -14,7 +14,7 @@ setuptools.setup(
     description="Printing colored messages to the CLI",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/adventgroup/colored-messages",
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
 )

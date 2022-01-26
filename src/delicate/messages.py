@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Liist of colors that we can use to style the console printed message
+# List of colors that we can use to style the console printed message
 # We also have some other special properties like bold/underline etc..
-class styles:
+class _styles:
     BLACK = '\033[30m'
     LIGHTBLACK = '\033[90m'
     DARKRED = '\033[31m'
@@ -25,12 +25,12 @@ class styles:
     UNDERLINE = '\033[4m'
     END = '\033[0m'
 
-# A method that print the message to the console output we support styling for the messages
+# A method that print the message to the console output, and we support styling for the messages
 def log(message, color=None):
     if (color == None):
         print(message)
     else:
-        if hasattr(styles, color):
-            print(getattr(styles, color) + message + '\033[0m')
+        if hasattr(_styles, color):
+            print(getattr(_styles, color) + message + '\033[0m')
         else:
             print(message + '\033[0m')

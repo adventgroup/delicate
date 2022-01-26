@@ -9,6 +9,6 @@ delicate is a minimalist python library which gives you the possibility to print
 ## Usage
 
 ```python
-import delicate as messages
+from delicate import messages
 
 messages.log('This is my log message', 'RED')

@@ -8,7 +8,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="delicate",
-    version="1.0.2",
+    version="1.0.3",
     author="Advent Group",
     author_email="development@adventgroup.net",
     description="Printing colored messages to the CLI",

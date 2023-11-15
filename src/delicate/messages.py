@@ -1,9 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# List of colors that we can use to style the console printed message
-# We also have some other special properties like bold/underline etc..
+"""
+This is a simple module for printing colored messages to the console output
+"""
+
+# Import the libraries
+import dataclasses
+
+@dataclasses.dataclass
 class _styles:
+    """
+    List of colors that we can use to style the console printed message
+    We also have some other special properties like bold/underline etc..
+    """
     BLACK = '\033[30m'
     LIGHTBLACK = '\033[90m'
     DARKRED = '\033[31m'
@@ -25,9 +35,16 @@ class _styles:
     UNDERLINE = '\033[4m'
     END = '\033[0m'
 
-# A method that print the message to the console output, and we support styling for the messages
+
+
+
 def log(message, color=None):
-    if (color == None):
+    """
+    A method that print the message to the console output, 
+    and we support styling for the messages
+    """
+
+    if color is None:
         print(message)
     else:
         if hasattr(_styles, color):

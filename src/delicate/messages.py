@@ -36,8 +36,6 @@ class _styles:
     END = '\033[0m'
 
 
-
-
 def log(message, color=None):
     """
     A method that print the message to the console output, 
